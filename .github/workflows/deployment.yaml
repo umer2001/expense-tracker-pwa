@@ -23,4 +23,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./build https://expense-tracker-pwa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build https://umer2001-expense-tracker-pwa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
