@@ -55,13 +55,13 @@
 }
 
 .blnc-p {
-  border-right: 5px #5CB65F solid;
-  border-left: 5px #5CB65F solid;
+  border-right: 5px #5cb65f solid;
+  border-left: 5px #5cb65f solid;
 }
 
 .blnc-n {
-  border-right: 5px #E15858 solid;
-  border-left: 5px #E15858 solid;
+  border-right: 5px #e15858 solid;
+  border-left: 5px #e15858 solid;
 }
 
 /*
@@ -79,10 +79,10 @@ div.row {
   margin: 0 4.1%;
 }
 .d-left {
-  border-bottom: 3px #5CB65F solid;
+  border-bottom: 3px #5cb65f solid;
 }
 .d-right {
-  border-bottom: 3px #E15858 solid;
+  border-bottom: 3px #e15858 solid;
 }
 
 /*
@@ -94,11 +94,11 @@ div.row {
 }
 
 .table {
-  color: #f3eded!important;
+  color: #f3eded !important;
 }
 
 .table-hover tbody tr:hover {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 /*
@@ -107,16 +107,16 @@ div.row {
 
 .danger {
   display: block;
-  border-top: none!important;
-  border-right: 5px #E15858 solid;
-  border-radius: .25rem!important;
+  border-top: none !important;
+  border-right: 5px #e15858 solid;
+  border-radius: 0.25rem !important;
 }
 
 .success {
   display: block;
-  border-top: none!important;
-  border-right: 5px #5CB65F solid;
-  border-radius: .25rem!important;
+  border-top: none !important;
+  border-right: 5px #5cb65f solid;
+  border-radius: 0.25rem !important;
 }
 
 /*
@@ -128,5 +128,5 @@ div.row {
 }
 
 .amount-help {
-  font-size: 53%;
+  font-size: 52%;
 }
