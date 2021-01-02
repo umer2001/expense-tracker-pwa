@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 
 import { GlobalContext } from "../context/GlobalState";
 
@@ -6,7 +6,7 @@ export const AddTransection = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
 
-  const { transections, addTransection } = useContext(GlobalContext);
+  const { addTransection } = useContext(GlobalContext);
   const onSubmit = (e) => {
     e.preventDefault();
     if (text !== "") {
@@ -20,13 +20,6 @@ export const AddTransection = () => {
       setAmount(0);
     }
   };
-
-  useEffect(() => {
-    if (transections.length !== 0) {
-      localStorage.setItem("transections", JSON.stringify(transections));
-    }
-  }, [transections]);
-
   return (
     <>
       <h3>Add new transection</h3>

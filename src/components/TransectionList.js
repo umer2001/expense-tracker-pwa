@@ -5,14 +5,18 @@ import { GlobalContext } from "../context/GlobalState";
 
 export const TransectionList = () => {
   const { transections, loadPrevTransections } = useContext(GlobalContext);
-  useEffect(() => {
-    const transectionsInLocalStorage = JSON.parse(
-      localStorage.getItem("transections")
-    );
-    if (transections.length === 0 && transectionsInLocalStorage !== null) {
-      loadPrevTransections();
-    }
-  }, []);
+  const checkAndload = () => {
+    console.log("in use effect");
+    try {
+      const transectionsInLocalStorage = JSON.parse(
+        localStorage.getItem("transections")
+      );
+      if (transections.length === 0 && transectionsInLocalStorage !== null) {
+        loadPrevTransections();
+      }
+    } catch (error) {}
+  };
+  useEffect(checkAndload, []);
   return (
     <>
       <h3>History</h3>
